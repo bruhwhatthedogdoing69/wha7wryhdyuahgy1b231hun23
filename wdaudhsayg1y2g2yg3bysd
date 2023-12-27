@@ -1,0 +1,10 @@
+local Loops = {}
+
+game:GetService("Players").LocalPlayer.Chatted:Connect(function(Message)
+if Message == ".troll" then
+Loops.spam = true
+repeat wait()
+game.Players:Chat(":money_mouth:")
+until not Loops.spam
+end
+end)
